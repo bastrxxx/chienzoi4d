@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Chiến Giới 4D</title>
+    <link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/maincg4d.css"/>
+  </head>
+
+  <body>
+    <!----Trailer-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl  modal-dialog-centered">
+			  <div class="modal-content">
+				<div class="modal-body">
+					<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+						<i class="fa fa-times" aria-hidden="true"></i>
+					  </button>
+					  <div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wTcNtgA6gHs"
+			   allowfullscreen></iframe>
+					 </div>	    
+				</div>
+			  </div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		  </div><!-- /.modal -->
+
+      <!----Popup Đăng ký-->
+		<div class="modal fade modal-dk" id="dksom" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-body">
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+						</button>
+						<div class="content-dksom">
+							<h4 class="mt-5">Đăng ký sớm</h4>
+							<input type="text" id="inputsdt" class="form-control mt-5" aria-describedby="passwordHelpBlock" placeholder="Nhập Số điện thoại">
+							<a class="btn btn-dangky">
+                <span class="textsub">Đăng Ký</span>
+                <img src="images/page2/btn-submit.png" alt="">
+              </a>
+
+							<!----Đăng ký thành công sẽ show phần bên dưới-->
+							<!-- <h4 class="mt-5">Chúc mừng bạn đã đăng ký thành công</h4>
+							<button type="submit" class="btn btn-dangky" data-bs-dismiss="modal" aria-label="Close">Quay lại</button> -->
+						</div>   
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+<!----Popup CHarVideoBack-->
+<div class="modal fade videochar" id="video1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+    <div class="modal-body">
+      <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+        <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+        <div class="embed-responsive embed-responsive-1by1">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wTcNtgA6gHs"
+     allowfullscreen></iframe>
+       </div>	    
+    </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+  </div><!-- /.videochar1 -->
+  <div class="modal fade videochar" id="video2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+          <div class="embed-responsive embed-responsive-1by1">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wTcNtgA6gHs"
+       allowfullscreen></iframe>
+         </div>	    
+      </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+    </div><!-- /.videochar1 -->
+    <div class="modal fade videochar" id="video3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+            <div class="embed-responsive embed-responsive-1by1">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wTcNtgA6gHs"
+         allowfullscreen></iframe>
+           </div>	    
+        </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+      </div><!-- /.videochar1 -->
+      <div class="modal fade videochar" id="video4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fa fa-times" aria-hidden="true"></i>
+              </button>
+              <div class="embed-responsive embed-responsive-1by1">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wTcNtgA6gHs"
+           allowfullscreen></iframe>
+             </div>	    
+          </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+        </div><!-- /.videochar1 -->
+        <div class="modal fade videochar" id="video5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+                <div class="embed-responsive embed-responsive-1by1">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wTcNtgA6gHs"
+             allowfullscreen></iframe>
+               </div>	    
+            </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+          </div><!-- /.videochar1 -->
+          <div class="modal fade videochar" id="video6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <div class="modal-content">
+              <div class="modal-body">
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                  </button>
+                  <div class="embed-responsive embed-responsive-1by1">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wTcNtgA6gHs"
+               allowfullscreen></iframe>
+                 </div>	    
+              </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+            </div><!-- /.videochar1 -->
+    <!----Popup thể lệ-->
+		<div class="modal fade modal-dk modal-thele" id="thele" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-body">
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+						</button>
+						<div class="content-dksom style2">
+							<h4 class="mt-3">Thể lệ</h4>
+							<p>Font Size
+                This one is self-explanatory. You’ll need to set up how large you’d like your font to be before you can set up the rest of your gradient. Working with font size in CSS is based on EMS, pixels, points, and percentages. You might need to look up conversions, but typically you can expect 1em = 12pt = 16px = 100%.
+                
+                Direction
+                Your text gradient isn’t so different from your linear gradient, specifically when it comes to direction. You can define the linear gradient angle in the code with a keyword or number and unit. With a keyword, you would use variations of to bottom, to top, to left, and to right to determine where the line should move to from the starting point. These directional keywords can be combined-like to top right or to bottom left-to create a diagonal line. You could also use number and unit pairings to determine the angle and direction of the line.
+                
+                Colors and Color Stops
+                In the most basic version of a CSS gradients, you'll need is at least two colors for the gradient to transition between. These are typically referred to as color-stops since, generally, they tell the code at which points each color should stop along the text gradient. These colors can be set as any type: named, HEX, RGB, or HSL. Because of this, there are a lot of different options when it comes to how your gradient can be shown.
+                Font Size
+This one is self-explanatory. You’ll need to set up how large you’d like your font to be before you can set up the rest of your gradient. Working with font size in CSS is based on EMS, pixels, points, and percentages. You might need to look up conversions, but typically you can expect 1em = 12pt = 16px = 100%.
+
+Direction
+Your text gradient isn’t so different from your linear gradient, specifically when it comes to direction. You can define the linear gradient angle in the code with a keyword or number and unit. With a keyword, you would use variations of to bottom, to top, to left, and to right to determine where the line should move to from the starting point. These directional keywords can be combined-like to top right or to bottom left-to create a diagonal line. You could also use number and unit pairings to determine the angle and direction of the line.
+
+Colors and Color Stops
+In the most basic version of a CSS gradients, you'll need is at least two colors for the gradient to transition between. These are typically referred to as color-stops since, generally, they tell the code at which points each color should stop along the text gradient. These colors can be set as any type: named, HEX, RGB, or HSL. Because of this, there are a lot of different options when it comes to how your gradient can be shown.
+							</p>
+						</div>   
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+<div class="topmenu" id="mobi">
+  <ul>
+    <li><a href="javascript:void(0)" class="home" target="_blank"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+    <li><a href="javascript:void(0)" class="facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+  </ul>
+</div>
+<div class="stickytop">
+  <ul>
+    <li><img src="images/qrcode.jpg" alt=""/></li>
+    <li><a href="#" class="appstore"><img src="images/appstore.png" alt=""/></a></li>
+    <li><a href="#" class="appstore"><img src="images/ggplay.png" alt=""/></a></li>
+    <li><a href="#" class="appstore"><img src="images/android.png" alt=""/></a></li>
+    <li><img src="images/iconcg.png" alt=""/></li>
+    <li><a href="#" class="appstore"><img src="images/btn-bxh.png" alt=""/></a></li>
+  </ul>
+</div>
+<div class="download fixed-top px-3 py-2">
+  <div class="container p-0">
+    <div class="left">
+      <img class="icongame me-2" src="images/iconcg.png" alt=""/>
+      <div class="title-game">
+        <h4>Chiến Giới 4D</h4>
+      </div>
+    </div>
+    <div class="right">
+      <a href="#" class="d-block" data-bs-toggle="modal" data-bs-target="#gameramat"><img class="android" src="images/taigg.png" alt=""/></a>
+      <!-- <a href="#" class="d-block" data-bs-toggle="modal" data-bs-target="#gameramat"><img class="ios" src="images/taiios.png" alt=""/></a>
+      <a href="#" class="d-block" data-bs-toggle="modal" data-bs-target="#gameramat"><img class="apk" src="images/taiapk.png" alt=""/></a> -->
+    </div>
+  </div>
+</div>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="header"> 
+            <div class="header-center">
+              <a href="#" class="header-logo" id="mobi"><img class="mx-auto d-block" src="images/page1/logo.png" alt=""/></a>
+              <a href="#" type="button" class="text-center d-block btnvideo" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img class="mx-auto text-web pt-4" src="images/page1/text-trailer.png" alt=""/>
+                <img class="mx-auto text-mb pt-4" src="images/page1/text-trailer-mb.png" alt=""/>
+                <img class="mx-auto text-mb light pt-4" src="images/page1/text-trailer-mb.png" alt=""/>
+              </a>
+              <p class="lanchuot"><img src="images/page1/chuot.png" alt=""/></p>
+            </div><!---Headercenter-->
+            <div class="bgvideo">
+              <video autoplay="" muted="" loop="" id="videoef" class="hideMb">
+                <source data-src="images/video_home_1.mp4" type="video/mp4" src="images/page1/page1.mp4">
+              </video>
+            </div><!---bgvideo-->
+          </div><!---header-->
+        </div>
+        <div class="swiper-slide">
+          <div class="page2">
+            <p class="titlpage" id="mobi"><img src="images/page2/title-p2.png" alt=""/></p>
+            <div class="bottomp2">
+              <ul>
+                <li><a href="#" class="btnthele" data-bs-toggle="modal" data-bs-target="#thele"><img src="images/page2/btn-thele.png" alt=""/></a></li>
+                <li><a href="#" class="btnthele" data-bs-toggle="modal" data-bs-target="#dksom"><img src="images/page2/btn-dangky.png" alt=""/></a></li>
+              </ul>
+              <a href="javascript:void(0)" class="dadk">Đã đăng ký: <span class="numberdk">100.000</span></a>
+              <div class="showdk mt-3">
+                  <img class=" inactive" src="images/page2/dk0.png" alt=""/>
+                  <img class="active inactive" src="images/page2/dk1.png" alt=""/>
+                  <img class=" inactive" src="images/page2/dk2.png" alt=""/>
+                  <img class=" inactive" src="images/page2/dk3.png" alt=""/>
+                  <img class=" inactive" src="images/page2/dk4.png" alt=""/>
+                  <img class=" inactive" src="images/page2/dk5.png" alt=""/>
+              </div>
+            </div>
+            <div class="bgvideo">
+              <video autoplay="" muted="" loop="" id="videoef" class="hideMb">
+                <source data-src="images/video_home_1.mp4" type="video/mp4" src="images/page2/page2.mp4">
+              </video>
+            </div><!---bgvideo-->
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="page3">
+            <p class="titlpage" id="mobi"><img src="images/page3/title-p3.png" alt=""/></p>
+            <ul class="nav navclick nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills1-tab" data-bs-toggle="pill" data-bs-target="#pills1" type="button" role="tab" aria-controls="pills1" aria-selected="true">
+                  <img src="images/page3/icon1-active.png" alt=""/>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills2-tab" data-bs-toggle="pill" data-bs-target="#pills2" type="button" role="tab" aria-controls="pills2" aria-selected="false">
+                  <img src="images/page3/icon2-active.png" alt=""/>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills3-tab" data-bs-toggle="pill" data-bs-target="#pills3" type="button" role="tab" aria-controls="pills3" aria-selected="false">
+                  <img src="images/page3/icon3-active.png" alt=""/>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills4-tab" data-bs-toggle="pill" data-bs-target="#pills4" type="button" role="tab" aria-controls="pills4" aria-selected="false">
+                  <img src="images/page3/icon4-active.png" alt=""/>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills5-tab" data-bs-toggle="pill" data-bs-target="#pills5" type="button" role="tab" aria-controls="pills5" aria-selected="false">
+                  <img src="images/page3/icon5-active.png" alt=""/>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills6-tab" data-bs-toggle="pill" data-bs-target="#pills6" type="button" role="tab" aria-controls="pills6" aria-selected="false">
+                  <img src="images/page3/icon6-active.png" alt=""/>
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills1" role="tabpanel" aria-labelledby="pills1">
+                <a href="#" class="btn-videoex"  data-bs-toggle="modal" data-bs-target="#video1"><img src="images/page3/playvideo.png" alt=""/></a>
+                <div class="bgtop">
+                  <div class="bgon">
+                    <img src="images/page3/bc-nd.jpg" alt=""/>
+                  </div>
+                  <div class="bgon2">
+                    <img src="images/page3/bc1.png" alt=""/>
+                  </div>
+                </div>
+                <div class="bgvideo">
+                  <iframe class="videoingame" width="100%" height="100%" src="https://www.youtube.com/embed/ME8WYWfPQME?rel=0&amp;&amp;loop=1&amp;autoplay=1;showinfo=0&amp;modestbranding=1&amp;controls=0&amp;playlist=ME8WYWfPQME&amp;mute=1" frameborder="0" allowfullscreen="" allow="autoplay"></iframe>
+                </div>
+                <div class="bgduoicung">
+                  <img src="images/page3/bgp3.png" alt=""/>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills2" role="tabpanel" aria-labelledby="pills2">
+                <a href="#" class="btn-videoex"  data-bs-toggle="modal" data-bs-target="#video2"><img src="images/page3/playvideo.png" alt=""/></a>
+                <div class="bgtop">
+                  <div class="bgon">
+                    <img src="images/page3/vtt-nd.jpg" alt=""/>
+                  </div>
+                  <div class="bgon2">
+                    <img src="images/page3/vtt2.png" alt=""/>
+                  </div>
+                </div>
+                <div class="bgvideo">
+                  <iframe class="videoingame" width="100%" height="100%" src="https://www.youtube.com/embed/ME8WYWfPQME?rel=0&amp;&amp;loop=1&amp;autoplay=1;showinfo=0&amp;modestbranding=1&amp;controls=0&amp;playlist=ME8WYWfPQME&amp;mute=1" frameborder="0" allowfullscreen="" allow="autoplay"></iframe>
+                </div>
+                <div class="bgduoicung">
+                  <img src="images/page3/bgp3.png" alt=""/>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills3" role="tabpanel" aria-labelledby="pills3">
+                <a href="#" class="btn-videoex"  data-bs-toggle="modal" data-bs-target="#video3"><img src="images/page3/playvideo.png" alt=""/></a>
+                <div class="bgtop">
+                  <div class="bgon">
+                    <img src="images/page3/gcl-nd.jpg" alt=""/>
+                  </div>
+                  <div class="bgon2">
+                    <img src="images/page3/gcl3.png" alt=""/>
+                  </div>
+                </div>
+                <div class="bgvideo">
+                  <iframe class="videoingame" width="100%" height="100%" src="https://www.youtube.com/embed/ME8WYWfPQME?rel=0&amp;&amp;loop=1&amp;autoplay=1;showinfo=0&amp;modestbranding=1&amp;controls=0&amp;playlist=ME8WYWfPQME&amp;mute=1" frameborder="0" allowfullscreen="" allow="autoplay"></iframe>
+                </div>
+                <div class="bgduoicung">
+                  <img src="images/page3/bgp3.png" alt=""/>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills4" role="tabpanel" aria-labelledby="pills4">
+                <a href="#" class="btn-videoex"  data-bs-toggle="modal" data-bs-target="#video4"><img src="images/page3/playvideo.png" alt=""/></a>
+                <div class="bgtop">
+                  <div class="bgon">
+                    <img src="images/page3/nk-nd.jpg" alt=""/>
+                  </div>
+                  <div class="bgon2">
+                    <img src="images/page3/nk4.png" alt=""/>
+                  </div>
+                </div>
+                <div class="bgvideo">
+                  <iframe class="videoingame" width="100%" height="100%" src="https://www.youtube.com/embed/ME8WYWfPQME?rel=0&amp;&amp;loop=1&amp;autoplay=1;showinfo=0&amp;modestbranding=1&amp;controls=0&amp;playlist=ME8WYWfPQME&amp;mute=1" frameborder="0" allowfullscreen="" allow="autoplay"></iframe>
+                </div>
+                <div class="bgduoicung">
+                  <img src="images/page3/bgp3.png" alt=""/>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills5" role="tabpanel" aria-labelledby="pills5">
+                <a href="#" class="btn-videoex"  data-bs-toggle="modal" data-bs-target="#video5"><img src="images/page3/playvideo.png" alt=""/></a>
+                <div class="bgtop">
+                  <div class="bgon">
+                    <img src="images/page3/qh-nd.jpg" alt=""/>
+                  </div>
+                  <div class="bgon2">
+                    <img src="images/page3/qh5.png" alt=""/>
+                  </div>
+                </div>
+                <div class="bgvideo">
+                  <iframe class="videoingame" width="100%" height="100%" src="https://www.youtube.com/embed/ME8WYWfPQME?rel=0&amp;&amp;loop=1&amp;autoplay=1;showinfo=0&amp;modestbranding=1&amp;controls=0&amp;playlist=ME8WYWfPQME&amp;mute=1" frameborder="0" allowfullscreen="" allow="autoplay"></iframe>
+                </div>
+                <div class="bgduoicung">
+                  <img src="images/page3/bgp3.png" alt=""/>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills6" role="tabpanel" aria-labelledby="pills6">
+                <a href="#" class="btn-videoex"  data-bs-toggle="modal" data-bs-target="#video6"><img src="images/page3/playvideo.png" alt=""/></a>
+                <div class="bgtop">
+                  <div class="bgon">
+                    <img src="images/page3/gau-nd.jpg" alt=""/>
+                  </div>
+                  <div class="bgon2">
+                    <img src="images/page3/gau6.png" alt=""/>
+                  </div>
+                </div>
+                <div class="bgvideo">
+                  <iframe class="videoingame" width="100%" height="100%" src="https://www.youtube.com/embed/ME8WYWfPQME?rel=0&amp;&amp;loop=1&amp;autoplay=1;showinfo=0&amp;modestbranding=1&amp;controls=0&amp;playlist=ME8WYWfPQME&amp;mute=1" frameborder="0" allowfullscreen="" allow="autoplay"></iframe>
+                </div>
+                <div class="bgduoicung">
+                  <img src="images/page3/bgp3.png" alt=""/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="page4">
+            <p class="titlpage" id="mobi"><img src="images/page4/title-p4.png" alt=""/></p>
+            <div class="swiper slidermb">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+              <!-- Slides -->
+                <div class="swiper-slide"><img src="images/page4/slidemb/1.png" alt=""/></div>
+                <div class="swiper-slide"><img src="images/page4/slidemb/2.png" alt=""/></div>
+                <div class="swiper-slide"><img src="images/page4/slidemb/3.png" alt=""/></div>
+                <div class="swiper-slide"><img src="images/page4/slidemb/4.png" alt=""/></div>
+                <div class="swiper-slide"><img src="images/page4/slidemb/5.png" alt=""/></div>
+                <div class="swiper-slide"><img src="images/page4/slidemb/6.png" alt=""/></div>
+                
+              </div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <img src="images/page4/nut1.jpg" alt="">
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <img src="images/page4/anh1.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <img src="images/page4/nut2.jpg" alt="">
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <img src="images/page4/anh2.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <img src="images/page4/nut3.jpg" alt="">
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <img src="images/page4/anh3.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <img src="images/page4/nut4.jpg" alt="">
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <img src="images/page4/anh4.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <img src="images/page4/nut5.jpg" alt="">
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <img src="images/page4/anh5.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    <img src="images/page4/nut6.jpg" alt="">
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <img src="images/page4/anh6.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" id="footerreal">
+          <div class="footer">
+            <div class="footer-content">
+              <img class="d-block mb-2" src="images/logovplay.png" alt="" />
+              <p>Hotline: <strong>1900866666</strong> - Email: <strong>hotro@vplay.vn</strong> - Chơi quá 180 phút một ngày sẽ ảnh hưởng xấu đến sức khỏe</p>
+
+<p>Vplay phân phối độc quyền tại Việt Nam. Địa chỉ: Tầng 7, tòa nhà VTVCab, Số 3, Ngõ 84 Ngọc Khánh, Phường Ngọc Khánh, quận Ba Đình, Thành Phố Hà Nội.</p>
+
+<p>Giấy phép phê duyệt nội dung số 68/QĐ-BTTTT cấp ngày 1x/03/202x</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Initialize Swiper -->
+    <script type="text/javascript">
+      var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        slidesPerView: "auto",
+        spaceBetween: 0,
+        mousewheel: true,
+        parallax: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        speed: 1000,
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".slidermb", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+        },
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
+      });
+    </script>
+  </body>
+</html>
