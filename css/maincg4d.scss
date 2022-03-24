@@ -27,7 +27,7 @@ a {text-decoration: none;transition: all 0.3s ease-in-out;}
 button {transition: all 0.7s ease-in-out !important;}
 a:hover {text-decoration: none;}
 html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Condensed', sans-serif;}
-.swiper{width:100%;height:100vh}
+.swiper{width:100%;height:100%}
 .swiper-slide{text-align:center;font-size:18px;background:#fff;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;align-items:center}
 .mySwiper{
     .swiper-pagination{left: 10px;
@@ -90,7 +90,7 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
       }
     }
   }
-.page2{height: 100vh;width: 100%;position: relative;background:url(../images/page2/bgp2.jpg) no-repeat top center;background-color:var(--color2);
+.page2{height: 100%;width: 100%;position: relative;background:url(../images/page2/bgp2.jpg) no-repeat top center;background-color:var(--color2);
     .titlpage{position: absolute;top:1.5%;z-index: 5;left: 50%;transform: translateX(-50%);width: 100%;
         img{max-width: 100%;display: block;margin: 0 auto;opacity: 0;}
     }
@@ -113,7 +113,7 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
         #videoef{position: relative;left: 50%;transform: translateX(-50%);height:100%;}
       }
 }
-.page3{height: 100vh;width: 100%;position:relative;background-color:var(--whitecolor);background: url(../images/page3/bgp3.jpg) no-repeat top center;
+.page3{height: 100%;width: 100%;position:relative;background-color:var(--whitecolor);background: url(../images/page3/bgp3.jpg) no-repeat top center;
     .titlpage{position: absolute;top:1.5%;z-index: 5;left: 50%;transform: translateX(-50%);width: 100%;
         img{max-width: 100%;display: block;margin: 0 auto;opacity: 1;}
     }
@@ -146,7 +146,7 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
         }
     }
 }
-.page4{height: 100vh;width: 100%;position:relative;background-color:var(--whitecolor);background: url(../images/page4/bgp4.jpg) no-repeat top center;
+.page4{height: 100%;width: 100%;position:relative;background-color:var(--whitecolor);background: url(../images/page4/bgp4.jpg) no-repeat top center;
     .titlpage{position: absolute;top:4%;z-index: 5;left: 50%;transform: translateX(-50%);width: 100%;
         img{max-width: 100%;display: block;margin: 0 auto;}
     }

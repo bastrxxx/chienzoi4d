@@ -217,7 +217,7 @@ html, body {
 
 .swiper {
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .swiper-slide {
@@ -403,7 +403,7 @@ html, body {
 }
 
 .page2 {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: relative;
   background: url(../images/page2/bgp2.jpg) no-repeat top center;
@@ -480,7 +480,7 @@ html, body {
 }
 
 .page3 {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: relative;
   background-color: var(--whitecolor);
@@ -590,7 +590,7 @@ html, body {
 }
 
 .page4 {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: relative;
   background-color: var(--whitecolor);
