@@ -332,7 +332,7 @@ html, body {
 .header {
   position: relative;
   background: url(../images/page1/bgp1.jpg) no-repeat top center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: var(--color2);
 }
@@ -855,7 +855,7 @@ html, body {
     flex-direction: column;
   }
 
-  .header .header-center a.header-logo, .page2 .titlpage, .page3 .titlpage, .page4 .titlpage {
+  .header .header-center a.header-logo, .page2 .titlpage, .page3 .titlpage, .page4 .titlpage, .topmenu {
     top: calc(145px * var(--ratio));
   }
 
@@ -937,7 +937,7 @@ html, body {
   .page3 .tab-content .bgtop {
     top: auto;
     bottom: 0;
-    height: 100vh;
+    height: 100%;
   }
   .page3 .tab-content .bgtop .bgon, .page3 .tab-content .bgtop .bgon2 {
     top: auto;

@@ -73,7 +73,7 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
     }
 }
 /*=Header=*/
-.header {position: relative;background:url(../images/page1/bgp1.jpg) no-repeat top center;height: 100vh;width:100%;background-color:var(--color2);
+.header {position: relative;background:url(../images/page1/bgp1.jpg) no-repeat top center;height: 100%;width:100%;background-color:var(--color2);
     .bgvideo {
       #videoef{position: relative;left: 50%;transform: translateX(-50%);height:100%;}
     }
@@ -247,7 +247,7 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
     .topmenu{
         ul{flex-direction: column}
     }
-    .header .header-center a.header-logo, .page2 .titlpage, .page3 .titlpage, .page4 .titlpage{top:calc(145px * var(--ratio));}
+    .header .header-center a.header-logo, .page2 .titlpage, .page3 .titlpage, .page4 .titlpage, .topmenu{top:calc(145px * var(--ratio));}
     .page3 .tab-content .btn-videoex{display: block;}
     .download{display: block;}
   .bgvideo{display: none !important;}
@@ -268,7 +268,7 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
     .page4 .slidermb .swiper-pagination{display: none;}
     .header .header-center a.header-logo img{max-width: 60%;}
     .header, .page2{background-size: 250% auto;}
-    .page3 .tab-content .bgtop{top: auto;bottom: 0;height: 100vh;
+    .page3 .tab-content .bgtop{top: auto;bottom: 0;height: 100%;
         .bgon, .bgon2{top: auto;bottom: 0;height:58%;bottom:10%;
             img{height: 100%;}
         }
