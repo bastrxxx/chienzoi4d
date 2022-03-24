@@ -246,7 +246,7 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
     .topmenu{
         ul{flex-direction: column}
     }
-    #mobi{top:calc(145px * var(--ratio));}
+    .swiper-slide .mobi{top:calc(145px * var(--ratio)) !important;}
     :root {--ratio:1;--lanchuot:0px;}
     .page3 .tab-content .btn-videoex{display: block;}
     .download{display: block;}

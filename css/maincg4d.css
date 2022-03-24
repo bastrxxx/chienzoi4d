@@ -850,8 +850,8 @@ html, body {
     flex-direction: column;
   }
 
-  #mobi {
-    top: calc(145px * var(--ratio));
+  .swiper-slide .mobi {
+    top: calc(145px * var(--ratio)) !important;
   }
 
   :root {
