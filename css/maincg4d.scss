@@ -242,12 +242,12 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
 }
 
 @media (max-width: 768px) {
+    :root {--ratio:1;--lanchuot:0px;}
     .lanchuot{display: none;}
     .topmenu{
         ul{flex-direction: column}
     }
-    .swiper-slide .mobi{top:calc(145px * var(--ratio)) !important;}
-    :root {--ratio:1;--lanchuot:0px;}
+    .header .header-center a.header-logo, .page2 .titlpage, .page3 .titlpage, .page4 .titlpage{top:calc(145px * var(--ratio));}
     .page3 .tab-content .btn-videoex{display: block;}
     .download{display: block;}
   .bgvideo{display: none !important;}
@@ -264,9 +264,9 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
     .page2 .bottomp2 a.dadk{background-size: contain;line-height: 56px;}
 }
 @media (max-width: 540px) {
+    :root {--ratio:0.8;}
     .page4 .slidermb .swiper-pagination{display: none;}
     .header .header-center a.header-logo img{max-width: 60%;}
-    :root {--ratio:0.8;}
     .header, .page2{background-size: 250% auto;}
     .page3 .tab-content .bgtop{top: auto;bottom: 0;height: 100vh;
         .bgon, .bgon2{top: auto;bottom: 0;height:58%;bottom:10%;
@@ -278,8 +278,9 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
     } 
 }
 @media (max-width: 414px) {
-    .header .header-center a.header-logo img{max-width:50%;}
     :root {--ratio:0.6;}
+    .header .header-center a.header-logo img{max-width:50%;}
+    
     .page3 .tab-content .bgtop .bgon2{left: 40%;}
     .header, .page2{background-size: 350% auto;}
     .page3 .navclick .nav-item{width:53px;}
