@@ -217,7 +217,7 @@ html, body {
 
 .swiper {
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 .swiper-slide {
@@ -395,6 +395,8 @@ html, body {
   -o-object-fit: cover;
      object-fit: cover;
   opacity: 0;
+  display: block;
+  height: auto;
 }
 .header .header-center .btnvideo img.text-mb {
   display: none;
@@ -529,14 +531,14 @@ html, body {
   display: block;
   position: absolute;
   right: 5px;
-  bottom: 15%;
+  bottom: calc(15% * var(--ratio));
   width: 112px;
   height: 112px;
   z-index: 15;
   display: none;
 }
 .page3 .tab-content .btn-videoex img {
-  max-width: 100%;
+  max-width: calc(100% * var(--ratio));
 }
 .page3 .tab-content .btn-videoex:hover {
   filter: brightness(120%);
