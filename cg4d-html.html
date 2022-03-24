@@ -212,8 +212,8 @@ In the most basic version of a CSS gradients, you'll need is at least two colors
         <div class="swiper-slide">
           <div class="header"> 
             <div class="header-center">
-              <a href="#" class="header-logo" id="mobi"><img class="mx-auto d-block" src="images/page1/logo.png" alt=""/></a>
-              <a href="#" type="button" class="text-center d-block btnvideo" data-bs-toggle="modal" data-bs-target="#myModal">
+              <a href="#" class="header-logo mobi"><img class="mx-auto d-block" src="images/page1/logo.png" alt=""/></a>
+              <a href="#" class="text-center d-block btnvideo" data-bs-toggle="modal" data-bs-target="#myModal">
                 <img class="mx-auto text-web pt-4" src="images/page1/text-trailer.png" alt=""/>
                 <img class="mx-auto text-mb pt-4" src="images/page1/text-trailer-mb.png" alt=""/>
               </a>
@@ -228,7 +228,7 @@ In the most basic version of a CSS gradients, you'll need is at least two colors
         </div>
         <div class="swiper-slide">
           <div class="page2">
-            <p class="titlpage" id="mobi"><img src="images/page2/title-p2.png" alt=""/></p>
+            <p class="titlpage mobi"><img src="images/page2/title-p2.png" alt=""/></p>
             <div class="bottomp2">
               <ul>
                 <li><a href="#" class="btnthele" data-bs-toggle="modal" data-bs-target="#thele"><img src="images/page2/btn-thele.png" alt=""/></a></li>
@@ -253,7 +253,7 @@ In the most basic version of a CSS gradients, you'll need is at least two colors
         </div>
         <div class="swiper-slide">
           <div class="page3">
-            <p class="titlpage" id="mobi"><img src="images/page3/title-p3.png" alt=""/></p>
+            <p class="titlpage mobi"><img src="images/page3/title-p3.png" alt=""/></p>
             <ul class="nav navclick nav-pills mb-3" id="pills-tab" role="tablist">
               <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="pills1-tab" data-bs-toggle="pill" data-bs-target="#pills1" type="button" role="tab" aria-controls="pills1" aria-selected="true">
@@ -394,7 +394,7 @@ In the most basic version of a CSS gradients, you'll need is at least two colors
         </div>
         <div class="swiper-slide">
           <div class="page4">
-            <p class="titlpage" id="mobi"><img src="images/page4/title-p4.png" alt=""/></p>
+            <p class="titlpage mobi"><img src="images/page4/title-p4.png" alt=""/></p>
             <div class="swiper slidermb">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
@@ -518,22 +518,39 @@ In the most basic version of a CSS gradients, you'll need is at least two colors
           el: ".swiper-pagination",
         },
         speed: 1000,
-        // breakpoints: {
-        //   // when window width is >= 320px
-        //   320: {
-        //     slidesPerView:0,
-        //     loopedSlides:null,
-        //     // mousewheel: false,
-        //     // parallax: true,
-        //     // pagination:false,
-        //     speed: 0,
-        //   },
-        //   769: {
-        //     slidesPerView: "auto",
-        //   },
-        // }
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            speed: 300,
+          },
+          769: {
+            speed: 1000,
+          },
+        }
       });
     </script>
+    <!-- <script type="text/javascript">
+      checkSize()
+      window.addEventListener("resize", checkSize);
+      function checkSize(){
+          var swiperExist = document.querySelector('.mySwiper').swiper;
+          if(window.innerWidth >1024 && swiperExist==null){
+              var swiper = new Swiper(".mySwiper", {
+                direction: "vertical",
+                slidesPerView: "auto",
+                spaceBetween: 0,
+                mousewheel: true,
+                parallax: true,
+                speed: 1000,
+                breakpoints: {
+                }
+              });
+            }else{
+            if(swiperExist) {
+            swiperExist.destroy();
+            }}
+        }
+        </script> -->
     <script>
       var swiper = new Swiper(".slidermb", {
         slidesPerView: 1,

@@ -126,6 +126,7 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
         }
     }
     .tab-content{width: 100%;height:100%;position: relative;margin: 0 auto;
+        .tab-pane{width: 100%;height: 100%;}
         .btn-videoex{display: block;position: absolute;right: 5px;bottom:calc(15% * var(--ratio));width: 112px;height: 112px;z-index: 15;display:none;
             img{max-width:calc(100% * var(--ratio));}
             &:hover{filter:brightness(120%);}
@@ -282,7 +283,7 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
     .header .header-center a.header-logo img{max-width:50%;}
     
     .page3 .tab-content .bgtop .bgon2{left: 40%;}
-    .header, .page2{background-size: 350% auto;}
+    .header, .page2{background-size: 300% auto;}
     .page3 .navclick .nav-item{width:53px;}
     .page2 .bottomp2 a.dadk{max-width: 320px;}
     .page4 .slidermb .swiper-pagination{display: block;}
