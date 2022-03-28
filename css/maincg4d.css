@@ -917,7 +917,7 @@ html, body {
   background-color: #5365eb;
 }
 
-@media (max-width: 1367px) {
+@media (max-width: 1400px) {
   .page3 .tab-content .bgvideo, .page3 .tab-content .bgduoicung, .page3 .tab-content .bgtop {
     top: 170px;
   }
