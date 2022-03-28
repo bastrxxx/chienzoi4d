@@ -41,6 +41,7 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
             a{display: flex;width:calc(44px * var(--ratio));height: calc(44px * var(--ratio));border-radius: 50%;background-color: #c0c3ec;color: #1d234c;justify-content: center;align-items: center;font-size: calc(24px * var(--ratio));border: 1px solid #8394a72b;
                 &:hover{background-color:rgb(253, 255, 231);}
             }
+            .group{display: none;}
         }
     }
 }
@@ -171,16 +172,33 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
             }
         }
     }
-    .accordion{display: flex;width: 1200px;margin: 0 auto;position: relative;top:208px;transition: none;
-        .accordion-item{display: flex;transition: none;
-            .accordion-header{transition: none;
-                .accordion-button{background-color: transparent;box-shadow: none;padding:0;
+    // .accordion{display: flex;width: 1200px;margin: 0 auto;position: relative;top:208px;transition: none;
+    //     .accordion-item{display: flex;transition: none;
+    //         .accordion-header{transition: none;
+    //             .accordion-button{background-color: transparent;box-shadow: none;padding:0;
+    //                 &::after{display: none;}
+    //             }
+    //             &:hover{filter: brightness(120%);}
+    //         }
+    //         .accordion-collapse{transition: none;
+    //             .accordion-body{padding: 0;transition: none;}
+    //         }
+    //     }
+        
+    // }
+    .showacc{display: flex;width: 1200px;margin: 0 auto;position: relative;top:208px;transition: none;
+        .accordion{display: flex;transition: none;
+            .card-header{transition: none;padding:0;
+                .card-title{background-color: transparent;box-shadow: none;padding:0;display:block;cursor: pointer;
                     &::after{display: none;}
+                    img{display: block;max-width: 100%;}
+                    &:hover{filter: brightness(120%);}
                 }
-                &:hover{filter: brightness(120%);}
             }
-            .accordion-collapse{transition: none;
-                .accordion-body{padding: 0;transition: none;}
+            .card-body{transition: none;padding:0;
+                .accordion-body{padding: 0;transition: none;
+                    img{max-width: 100%;}
+                }
             }
         }
         
@@ -251,7 +269,7 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
     .page .titlpage{max-width: 40%;}
     .page2 .bgvideo #videoef{max-width: 100%;}
     .page4{background:url(../images/page4/bgp4mb.jpg) no-repeat top center;}
-    .page4 .accordion{display: none;}
+    .page4 .showacc{display: none;}
     .page4 .slidermb{display: block;
         .swiper-pagination{bottom:calc(20% * var(--ratio));
             .swiper-pagination-bullet-active{background-color:#61254a;}
@@ -291,7 +309,11 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
     :root {--ratio:1;--lanchuot:0px;}
     .lanchuot{display: none;}
     .topmenu{
-        ul{flex-direction: column}
+        ul{flex-direction: column;
+            li{
+                .group{display: flex;}
+            }
+        }
     }
     .header .header-center a.header-logo, .page2 .titlpage, .page3 .titlpage, .page4 .titlpage, .topmenu{top:calc(145px * var(--ratio));}
     .page3 .tab-content .btn-videoex{display: block;}

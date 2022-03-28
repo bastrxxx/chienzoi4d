@@ -320,6 +320,9 @@ html, body {
 .topmenu ul li a:hover {
   background-color: #fdffe7;
 }
+.topmenu ul li .group {
+  display: none;
+}
 
 /*===DOWNLOAD DETECH========*/
 .download {
@@ -720,7 +723,7 @@ html, body {
 .page4 .slidermb .swiper-wrapper .swiper-slide img {
   max-width: 100%;
 }
-.page4 .accordion {
+.page4 .showacc {
   display: flex;
   width: 1200px;
   margin: 0 auto;
@@ -728,30 +731,41 @@ html, body {
   top: 208px;
   transition: none;
 }
-.page4 .accordion .accordion-item {
+.page4 .showacc .accordion {
   display: flex;
   transition: none;
 }
-.page4 .accordion .accordion-item .accordion-header {
+.page4 .showacc .accordion .card-header {
   transition: none;
+  padding: 0;
 }
-.page4 .accordion .accordion-item .accordion-header .accordion-button {
+.page4 .showacc .accordion .card-header .card-title {
   background-color: transparent;
   box-shadow: none;
   padding: 0;
+  display: block;
+  cursor: pointer;
 }
-.page4 .accordion .accordion-item .accordion-header .accordion-button::after {
+.page4 .showacc .accordion .card-header .card-title::after {
   display: none;
 }
-.page4 .accordion .accordion-item .accordion-header:hover {
+.page4 .showacc .accordion .card-header .card-title img {
+  display: block;
+  max-width: 100%;
+}
+.page4 .showacc .accordion .card-header .card-title:hover {
   filter: brightness(120%);
 }
-.page4 .accordion .accordion-item .accordion-collapse {
+.page4 .showacc .accordion .card-body {
   transition: none;
+  padding: 0;
 }
-.page4 .accordion .accordion-item .accordion-collapse .accordion-body {
+.page4 .showacc .accordion .card-body .accordion-body {
   padding: 0;
   transition: none;
+}
+.page4 .showacc .accordion .card-body .accordion-body img {
+  max-width: 100%;
 }
 
 #footerreal {
@@ -955,7 +969,7 @@ html, body {
     background: url(../images/page4/bgp4mb.jpg) no-repeat top center;
   }
 
-  .page4 .accordion {
+  .page4 .showacc {
     display: none;
   }
 
@@ -1061,6 +1075,9 @@ html, body {
 
   .topmenu ul {
     flex-direction: column;
+  }
+  .topmenu ul li .group {
+    display: flex;
   }
 
   .header .header-center a.header-logo, .page2 .titlpage, .page3 .titlpage, .page4 .titlpage, .topmenu {
