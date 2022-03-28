@@ -5,7 +5,7 @@
     <title>Chiến Giới 4D</title>
     <link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/maincg4d.css"/>
@@ -37,16 +37,19 @@
 						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
 						</button>
 						<div class="content-dksom">
-							<h4 class="mt-5">Đăng ký sớm</h4>
+							<!-- <h4 class="mt-5">Đăng ký sớm</h4>
 							<input type="text" id="inputsdt" class="form-control mt-5" aria-describedby="passwordHelpBlock" placeholder="Nhập Số điện thoại">
 							<a class="btn btn-dangky">
                 <span class="textsub">Đăng Ký</span>
                 <img src="images/page2/btn-submit.png" alt="">
-              </a>
+              </a> -->
 
 							<!----Đăng ký thành công sẽ show phần bên dưới-->
-							<!-- <h4 class="mt-5">Chúc mừng bạn đã đăng ký thành công</h4>
-							<button type="submit" class="btn btn-dangky" data-bs-dismiss="modal" aria-label="Close">Quay lại</button> -->
+							<h4 class="pt-5 mt-5">Chúc mừng bạn đã đăng ký thành công</h4>
+							<a class="btn btn-dangky"  data-bs-dismiss="modal" aria-label="Close">
+                <span class="textsub">Quay lại</span>
+                <img src="images/page2/btn-submit.png" alt="">
+              </a>
 						</div>   
 					</div>
 				</div><!-- /.modal-content -->
@@ -210,7 +213,7 @@ In the most basic version of a CSS gradients, you'll need is at least two colors
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <div class="header"> 
+          <div class="header page"> 
             <div class="header-center">
               <a href="#" class="header-logo mobi"><img class="mx-auto d-block" src="images/page1/logo.png" alt=""/></a>
               <a href="#" class="text-center d-block btnvideo" data-bs-toggle="modal" data-bs-target="#myModal">
@@ -227,7 +230,7 @@ In the most basic version of a CSS gradients, you'll need is at least two colors
           </div><!---header-->
         </div>
         <div class="swiper-slide">
-          <div class="page2">
+          <div class="page2 page">
             <p class="titlpage mobi"><img src="images/page2/title-p2.png" alt=""/></p>
             <div class="bottomp2">
               <ul>
@@ -236,6 +239,30 @@ In the most basic version of a CSS gradients, you'll need is at least two colors
               </ul>
               <a href="javascript:void(0)" class="dadk">Đã đăng ký: <span class="numberdk">100.000</span></a>
               <div class="showdk mt-3">
+                  <div class="hover-mix">
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0);">1</a>
+                        <p><img src="images/page2/hover1.png" alt=""/></p>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">1</a>
+                        <p><img src="images/page2/hover2.png" alt=""/></p>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">1</a>
+                        <p><img src="images/page2/hover3.png" alt=""/></p>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">1</a>
+                        <p><img src="images/page2/hover4.png" alt=""/></p>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">1</a>
+                        <p><img src="images/page2/hover5.png" alt=""/></p>
+                      </li>
+                    </ul>
+                  </div>
                   <img class=" inactive" src="images/page2/dk0.png" alt=""/>
                   <img class="active inactive" src="images/page2/dk1.png" alt=""/>
                   <img class=" inactive" src="images/page2/dk2.png" alt=""/>
@@ -252,7 +279,7 @@ In the most basic version of a CSS gradients, you'll need is at least two colors
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="page3">
+          <div class="page3 page">
             <p class="titlpage mobi"><img src="images/page3/title-p3.png" alt=""/></p>
             <ul class="nav navclick nav-pills mb-3" id="pills-tab" role="tablist">
               <li class="nav-item" role="presentation">
@@ -291,31 +318,25 @@ In the most basic version of a CSS gradients, you'll need is at least two colors
                 <a href="#" class="btn-videoex"  data-bs-toggle="modal" data-bs-target="#video1"><img src="images/page3/playvideo.png" alt=""/></a>
                 <div class="bgtop">
                   <div class="bgon">
-                    <img src="images/page3/bc-nd.jpg" alt=""/>
-                  </div>
-                  <div class="bgon2">
-                    <img src="images/page3/bc1.png" alt=""/>
+                    <img src="images/page3/bc-nd.png" alt=""/>
                   </div>
                 </div>
                 <div class="bgvideo">
-                  <iframe class="videoingame" width="100%" height="100%" src="https://www.youtube.com/embed/ME8WYWfPQME?rel=0&amp;&amp;loop=1&amp;autoplay=1;showinfo=0&amp;modestbranding=1&amp;controls=0&amp;playlist=ME8WYWfPQME&amp;mute=1" frameborder="0" allowfullscreen="" allow="autoplay"></iframe>
+                  <iframe class="videoingame" width="100%" height="100%" src="https://www.youtube.com/embed/ME8WYWfPQME?rel=0&amp;&amp;loop=1&amp;autoplay=1;showinfo=0&amp;modestbranding=1&amp;controls=0&amp;mute=1" frameborder="0" allowfullscreen="" allow="autoplay"></iframe>
                 </div>
                 <div class="bgduoicung">
                   <img src="images/page3/bgp3.png" alt=""/>
                 </div>
               </div>
               <div class="tab-pane fade" id="pills2" role="tabpanel" aria-labelledby="pills2">
-                <a href="#" class="btn-videoex"  data-bs-toggle="modal" data-bs-target="#video2"><img src="images/page3/playvideo.png" alt=""/></a>
+                <a href="javascript:void(0);" class="btn-videoex"  data-bs-toggle="modal" data-bs-target="#video2"><img src="images/page3/playvideo.png" alt=""/></a>
                 <div class="bgtop">
                   <div class="bgon">
-                    <img src="images/page3/vtt-nd.jpg" alt=""/>
-                  </div>
-                  <div class="bgon2">
-                    <img src="images/page3/vtt2.png" alt=""/>
+                    <img src="images/page3/vtt-nd.png" alt=""/>
                   </div>
                 </div>
                 <div class="bgvideo">
-                  <iframe class="videoingame" width="100%" height="100%" src="https://www.youtube.com/embed/ME8WYWfPQME?rel=0&amp;&amp;loop=1&amp;autoplay=1;showinfo=0&amp;modestbranding=1&amp;controls=0&amp;playlist=ME8WYWfPQME&amp;mute=1" frameborder="0" allowfullscreen="" allow="autoplay"></iframe>
+                  <iframe class="videoingame" width="100%" height="100%" src="https://www.youtube.com/embed/ME8WYWfPQME?rel=0&amp;&amp;loop=1&amp;autoplay=1;showinfo=0&amp;modestbranding=1&amp;controls=0&amp;mute=1" frameborder="0" allowfullscreen="" allow="autoplay"></iframe>
                 </div>
                 <div class="bgduoicung">
                   <img src="images/page3/bgp3.png" alt=""/>
@@ -325,14 +346,11 @@ In the most basic version of a CSS gradients, you'll need is at least two colors
                 <a href="#" class="btn-videoex"  data-bs-toggle="modal" data-bs-target="#video3"><img src="images/page3/playvideo.png" alt=""/></a>
                 <div class="bgtop">
                   <div class="bgon">
-                    <img src="images/page3/gcl-nd.jpg" alt=""/>
-                  </div>
-                  <div class="bgon2">
-                    <img src="images/page3/gcl3.png" alt=""/>
+                    <img src="images/page3/gcl-nd.png" alt=""/>
                   </div>
                 </div>
                 <div class="bgvideo">
-                  <iframe class="videoingame" width="100%" height="100%" src="https://www.youtube.com/embed/ME8WYWfPQME?rel=0&amp;&amp;loop=1&amp;autoplay=1;showinfo=0&amp;modestbranding=1&amp;controls=0&amp;playlist=ME8WYWfPQME&amp;mute=1" frameborder="0" allowfullscreen="" allow="autoplay"></iframe>
+                  <iframe class="videoingame" width="100%" height="100%" src="https://www.youtube.com/embed/ME8WYWfPQME?rel=0&amp;&amp;loop=1&amp;autoplay=1;showinfo=0&amp;modestbranding=1&amp;controls=0&amp;mute=1" frameborder="0" allowfullscreen="" allow="autoplay"></iframe>
                 </div>
                 <div class="bgduoicung">
                   <img src="images/page3/bgp3.png" alt=""/>
@@ -342,14 +360,11 @@ In the most basic version of a CSS gradients, you'll need is at least two colors
                 <a href="#" class="btn-videoex"  data-bs-toggle="modal" data-bs-target="#video4"><img src="images/page3/playvideo.png" alt=""/></a>
                 <div class="bgtop">
                   <div class="bgon">
-                    <img src="images/page3/nk-nd.jpg" alt=""/>
-                  </div>
-                  <div class="bgon2">
-                    <img src="images/page3/nk4.png" alt=""/>
+                    <img src="images/page3/nk-nd.png" alt=""/>
                   </div>
                 </div>
                 <div class="bgvideo">
-                  <iframe class="videoingame" width="100%" height="100%" src="https://www.youtube.com/embed/ME8WYWfPQME?rel=0&amp;&amp;loop=1&amp;autoplay=1;showinfo=0&amp;modestbranding=1&amp;controls=0&amp;playlist=ME8WYWfPQME&amp;mute=1" frameborder="0" allowfullscreen="" allow="autoplay"></iframe>
+                  <iframe class="videoingame" width="100%" height="100%" src="https://www.youtube.com/embed/ME8WYWfPQME?rel=0&amp;&amp;loop=1&amp;autoplay=1;showinfo=0&amp;modestbranding=1&amp;controls=0&amp;mute=1" frameborder="0" allowfullscreen="" allow="autoplay"></iframe>
                 </div>
                 <div class="bgduoicung">
                   <img src="images/page3/bgp3.png" alt=""/>
@@ -359,14 +374,11 @@ In the most basic version of a CSS gradients, you'll need is at least two colors
                 <a href="#" class="btn-videoex"  data-bs-toggle="modal" data-bs-target="#video5"><img src="images/page3/playvideo.png" alt=""/></a>
                 <div class="bgtop">
                   <div class="bgon">
-                    <img src="images/page3/qh-nd.jpg" alt=""/>
-                  </div>
-                  <div class="bgon2">
-                    <img src="images/page3/qh5.png" alt=""/>
+                    <img src="images/page3/qh-nd.png" alt=""/>
                   </div>
                 </div>
                 <div class="bgvideo">
-                  <iframe class="videoingame" width="100%" height="100%" src="https://www.youtube.com/embed/ME8WYWfPQME?rel=0&amp;&amp;loop=1&amp;autoplay=1;showinfo=0&amp;modestbranding=1&amp;controls=0&amp;playlist=ME8WYWfPQME&amp;mute=1" frameborder="0" allowfullscreen="" allow="autoplay"></iframe>
+                  <iframe class="videoingame" width="100%" height="100%" src="https://www.youtube.com/embed/ME8WYWfPQME?rel=0&amp;&amp;loop=1&amp;autoplay=1;showinfo=0&amp;modestbranding=1&amp;controls=0&amp;mute=1" frameborder="0" allowfullscreen="" allow="autoplay"></iframe>
                 </div>
                 <div class="bgduoicung">
                   <img src="images/page3/bgp3.png" alt=""/>
@@ -376,14 +388,11 @@ In the most basic version of a CSS gradients, you'll need is at least two colors
                 <a href="#" class="btn-videoex"  data-bs-toggle="modal" data-bs-target="#video6"><img src="images/page3/playvideo.png" alt=""/></a>
                 <div class="bgtop">
                   <div class="bgon">
-                    <img src="images/page3/gau-nd.jpg" alt=""/>
-                  </div>
-                  <div class="bgon2">
-                    <img src="images/page3/gau6.png" alt=""/>
+                    <img src="images/page3/gau-nd.png" alt=""/>
                   </div>
                 </div>
                 <div class="bgvideo">
-                  <iframe class="videoingame" width="100%" height="100%" src="https://www.youtube.com/embed/ME8WYWfPQME?rel=0&amp;&amp;loop=1&amp;autoplay=1;showinfo=0&amp;modestbranding=1&amp;controls=0&amp;playlist=ME8WYWfPQME&amp;mute=1" frameborder="0" allowfullscreen="" allow="autoplay"></iframe>
+                  <iframe class="videoingame" width="100%" height="100%" src="https://www.youtube.com/embed/ME8WYWfPQME?rel=0&amp;&amp;loop=1&amp;autoplay=1;showinfo=0&amp;modestbranding=1&amp;controls=0&amp;mute=1" frameborder="0" allowfullscreen="" allow="autoplay"></iframe>
                 </div>
                 <div class="bgduoicung">
                   <img src="images/page3/bgp3.png" alt=""/>
@@ -393,7 +402,7 @@ In the most basic version of a CSS gradients, you'll need is at least two colors
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="page4">
+          <div class="page4 page">
             <p class="titlpage mobi"><img src="images/page4/title-p4.png" alt=""/></p>
             <div class="swiper slidermb">
               <!-- Additional required wrapper -->
@@ -503,7 +512,7 @@ In the most basic version of a CSS gradients, you'll need is at least two colors
       <div class="swiper-pagination"></div>
     </div>
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- Initialize Swiper -->
@@ -522,9 +531,11 @@ In the most basic version of a CSS gradients, you'll need is at least two colors
           // when window width is >= 320px
           320: {
             speed: 300,
+            allowTouchMove: true,
           },
           769: {
             speed: 1000,
+            allowTouchMove: false,
           },
         }
       });

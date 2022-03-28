@@ -30,7 +30,7 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
 .swiper{width:100%;height:100%}
 .swiper-slide{text-align:center;font-size:18px;background:#fff;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;align-items:center}
 .mySwiper{
-    .swiper-pagination{left: 10px;
+    .swiper-pagination{left: 10px;z-index: 1;right:auto;
         .swiper-pagination-bullet{transition: all 0.8s ease-in-out;}
         .swiper-pagination-bullet-active{background-color: #efe1ff;}
     }
@@ -91,7 +91,7 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
     }
   }
 .page2{height: 100%;width: 100%;position: relative;background:url(../images/page2/bgp2.jpg) no-repeat top center;background-color:var(--color2);
-    .titlpage{position: absolute;top:1.5%;z-index: 5;left: 50%;transform: translateX(-50%);width: 100%;
+    .titlpage{position: absolute;top:5%;z-index: 5;left: 50%;transform: translateX(-50%);width: 100%;
         img{max-width: 100%;display: block;margin: 0 auto;opacity: 0;}
     }
     .bottomp2{position: absolute;bottom:3%;z-index: 5;left: 50%;transform: translateX(-50%);width: 100%;
@@ -105,6 +105,19 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
         }
         a.dadk{color:#0f215a;display: block;margin: 0 auto;background: url(../images/page2/bg-dadk.png) no-repeat top center;width: 349px;height: 61px;line-height: 61px;cursor:default;font-size: 28px;font-weight: 700;}
         .showdk{position: relative;width: 100%;
+            .hover-mix{position:absolute;top: 0;left: 50%;transform: translateX(-50%);width: 100%;max-width: 828px;height:100%;
+                ul{list-style:none;display: flex;padding:0 9%;height:100%;grid-gap:0;justify-content: space-between;
+                    li{width: 16%;height: 100%;text-align: center;position: relative;cursor: pointer;
+                        a{text-indent: -99999px;}
+                        p{position:absolute;bottom:90%;display:none;
+                            img{display: block;}
+                        }
+                        &:hover{
+                            p{display:block;animation: showpop 0.3s linear;}
+                        }
+                    }
+                }
+            }
             img.inactive{display: none;margin: 0 auto;max-width: 100%;}
             img.active{display: block;}
         }
@@ -114,7 +127,7 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
       }
 }
 .page3{height: 100%;width: 100%;position:relative;background-color:var(--whitecolor);background: url(../images/page3/bgp3.jpg) no-repeat top center;
-    .titlpage{position: absolute;top:1.5%;z-index: 5;left: 50%;transform: translateX(-50%);width: 100%;
+    .titlpage{position: absolute;top:5%;z-index: 5;left: 50%;transform: translateX(-50%);width: 100%;
         img{max-width: 100%;display: block;margin: 0 auto;opacity: 1;}
     }
     .navclick{position: absolute;bottom: 4%;z-index: 8;right:15%;
@@ -148,7 +161,7 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
     }
 }
 .page4{height: 100%;width: 100%;position:relative;background-color:var(--whitecolor);background: url(../images/page4/bgp4.jpg) no-repeat top center;
-    .titlpage{position: absolute;top:4%;z-index: 5;left: 50%;transform: translateX(-50%);width: 100%;
+    .titlpage{position: absolute;top:5%;z-index: 5;left: 50%;transform: translateX(-50%);width: 100%;
         img{max-width: 100%;display: block;margin: 0 auto;}
     }
     .slidermb{display: none;
@@ -227,10 +240,18 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
 
 
 
-
-
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
+    .page3 .tab-content .bgvideo, .page3 .tab-content .bgduoicung, .page3 .tab-content .bgtop{top:170px;}
+    .page3 .tab-content .bgtop{height: 76%;
+        .bgon{height: 100%;}
+        img{max-height: 100%;}
+    }
     :root {--ratio:1;}
+    .header {background-image: none;
+        .bgvideo #videoef{max-width: 100%;}
+    }
+    .page .titlpage{max-width: 40%;}
+    .page2 .bgvideo #videoef{max-width: 100%;}
     .stickytop{display: none;}
     .page4{background:url(../images/page4/bgp4mb.jpg) no-repeat top center;}
     .page4 .accordion{display: none;}
@@ -239,10 +260,13 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
             .swiper-pagination-bullet-active{background-color:#61254a;}
         }
     }
-    .page1, .page2, .page3, .page4{background-size: cover;}
+    .page1, .page2, .page3, .page4{background-size: contain;}
+    .page4 .slidermb .swiper-wrapper{top:19%;}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    .page1, .page2, .page3, .page4{background-size:260% auto;}
+    .page .titlpage{max-width: 100%;}
     :root {--ratio:1;--lanchuot:0px;}
     .lanchuot{display: none;}
     .topmenu{
@@ -252,7 +276,7 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
     .page3 .tab-content .btn-videoex{display: block;}
     .download{display: block;}
   .bgvideo{display: none !important;}
-  .header{background-size: 260% auto;}
+  .header{background-size: 260% auto;background-image:url(../images/page1/bgp1.jpg);}
   .header .header-center .btnvideo img{opacity: 1;}
   .header .header-center .btnvideo img.text-web{display: none;}
   .header .header-center .btnvideo img.text-mb{display: block;}
@@ -263,6 +287,10 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
     .page2 .titlpage img,.page3 .titlpage img{opacity: 1;}
     .page3 .navclick{right: auto;left: 50%;transform: translateX(-50%);width: 100%;justify-content: center;bottom: 0;margin-bottom: 0 !important;}
     .page2 .bottomp2 a.dadk{background-size: contain;line-height: 56px;}
+    .page3 .tab-content .bgvideo, .page3 .tab-content .bgduoicung, .page3 .tab-content .bgtop{bottom: 0;top: auto;position: absolute;}
+    .page3 .tab-content .bgtop{height: 64%;z-index: 5;}
+    .page4 .slidermb .swiper-wrapper{top:calc(300px * var(--ratio));}
+    .page2 .bottomp2 .showdk .hover-mix{display: none;}
 }
 @media (max-width: 540px) {
     :root {--ratio:0.8;}
@@ -281,10 +309,18 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
 @media (max-width: 414px) {
     :root {--ratio:0.6;}
     .header .header-center a.header-logo img{max-width:50%;}
-    
+    .page3 .tab-content .bgduoicung{display: none;}
     .page3 .tab-content .bgtop .bgon2{left: 40%;}
-    .header, .page2{background-size: 300% auto;}
+    .header, .page2{background-size: 280% auto;}
+    .page3, .page4{background-size: 500% auto;}
     .page3 .navclick .nav-item{width:53px;}
     .page2 .bottomp2 a.dadk{max-width: 320px;}
     .page4 .slidermb .swiper-pagination{display: block;}
+}
+@media (max-width: 375px) {
+    .header, .page2{background-size: 280% auto;background-position-y: 20%;}
+    .header .header-center .btnvideo{bottom: 20%;}
+}
+@media (max-width: 320px) {
+    .header .header-center .btnvideo{bottom: 10%;}
 }
