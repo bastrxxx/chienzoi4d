@@ -990,6 +990,12 @@ html, body {
   .page4 .slidermb .swiper-wrapper {
     top: 19%;
   }
+
+  .page2 .bottomp2 {
+    transform: translateX(-50%) scale(0.8);
+    width: auto;
+    bottom: 0;
+  }
 }
 @media (max-width: 1280px) {
   .page3 .tab-content .bgvideo, .page3 .tab-content .bgduoicung, .page3 .tab-content .bgtop {
@@ -1056,6 +1062,12 @@ html, body {
   }
 }
 @media (max-width: 1024px) {
+  .page2 .bottomp2 {
+    transform: translateX(-50%) scale(1);
+    width: 100%;
+    bottom: 3%;
+  }
+
   .page1, .page2, .page3, .page4 {
     background-size: cover;
   }

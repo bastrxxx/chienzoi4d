@@ -277,6 +277,7 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
     }
     .page1, .page2, .page3, .page4{background-size: cover;}
     .page4 .slidermb .swiper-wrapper{top:19%;}
+    .page2 .bottomp2{transform: translateX(-50%) scale(0.8);width: auto;bottom: 0;}
 }
 
 @media (max-width: 1280px) {
@@ -304,6 +305,7 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
 }
 
 @media (max-width: 1024px) {
+    .page2 .bottomp2{transform: translateX(-50%) scale(1);width: 100%;bottom: 3%;}
     .page1, .page2, .page3, .page4{background-size:cover;}
     .page .titlpage{max-width: 100%;}
     :root {--ratio:1;--lanchuot:0px;}
